@@ -1,0 +1,250 @@
+
+<!doctype html>
+<html lang="es">
+  <head>
+  
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Sistemas digitales</title>    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">	
+	<link href="css/estilo.css" rel="stylesheet" type="text/css">	
+  </head>
+  
+  
+  <body>
+	
+<div id="menucin">
+<img src="imas/menu.jpg" id="menucito1" class="img-fluid d-lg-block d-md-none d-sm-none d-none" alt="Encabezado de Sistemas Digitales">
+<img src="imas/menu_m.jpg" id="menucito2" class="img-fluid d-md-block d-lg-none d-sm-none d-none" alt="Encabezado de Sistemas Digitales">
+<img src="imas/menu_sm.jpg" id="menucito3" class="img-fluid d-block d-md-none" alt="Encabezado de Sistemas Digitales">	
+	<p id="botones_menu" class="d-md-block d-sm-none d-none"> <a href="index.html" target="_self" class="bot-menu"> Inicio </a> &nbsp;&nbsp; <a href="unidad1.html" target="_self" class="bot-menu">  Unidad I </a> &nbsp;&nbsp; <a href="unidad2.html" target="_self" class="bot-menu">  Unidad II </a> &nbsp;&nbsp; <a href="unidad3.html" target="_self" class="bot-menu">  Unidad III </a> &nbsp;&nbsp; <a href="unidad4.html" target="_self" class="bot-menu"> Unidad IV </a>   &nbsp;&nbsp; <a href="unidad5.html" target="_self" class="bot-menu">  Unidad V </a> &nbsp;&nbsp; <a href="bibliografia.html" target="_self" class="bot-menu">  Bibliografía </a> </p>
+</div>
+	  
+	  
+<div>
+
+<nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-primary d-md-none">
+	
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	  
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		  <li id="espacio"></li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" >Inicio</a>
+        </li>
+        
+       
+		  <li class="nav-item">
+          <a class="na5.2.1v-link" href="unidad1.html">Unidad I</a>
+        </li>
+		  
+		  <li class="nav-item">
+          <a class="nav-link" href="unidad2.html">Unidad II</a>
+        </li>
+		  
+		  <li class="nav-item">
+          <a class="nav-link" href="unidad3.html">Unidad III</a>
+        </li>
+		  
+		  <li class="nav-item">
+          <a class="nav-link" href="unidad4.html">Unidad IV</a>
+        </li>
+		  
+		  <li class="nav-item">
+          <a class="nav-link" href="unidad5.html">Unidad V</a>
+        </li>
+		  
+		  <li class="nav-item">
+          <a class="nav-link" href="bibliografia.html">Bibliografía</a>
+        </li>
+		  
+		  
+      </ul>
+    </div>
+  </div>
+</nav>
+	 
+	</div>
+	  
+
+	  
+
+		  <br><br><br>
+	<div class="container">
+		
+		<center><img src="imas/portada_u5.jpg" class="img-fluid" alt="Unidad V"></center>
+		<br>
+		
+		<div class="card-header">5.3. Convertidores Analógico-Digital (CAD)</div>
+		<br>
+    <p>Un conversor analógico-digital es un dispositivo electrónico que convierte una señal analógica de voltaje a un número digital. La salida digital puede usar diferentes esquemas de codificación, como binario o BCD. </p>
+    <p>En esta definición están presentes los cuatro procesos que intervienen en la conversión analógica-digital:</p>
+
+    <ul>
+    <li>Muestreo: el muestreo (en inglés, sampling) consiste en tomar muestras periódicas de la amplitud de onda. La velocidad con que se toma esta muestra, es decir, el número de muestras por segundo, es lo que se conoce como frecuencia de muestreo.</li>
+    <li>Retención (en inglés, hold): las muestras tomadas han de ser retenidas por un circuito de retención (hold), el tiempo suficiente para permitir evaluar su nivel (cuantificación).</li>
+    <li>Cuantificación: en el proceso de cuantificación se mide el nivel de voltaje de cada una de las muestras. Consiste en asignar el valor de una señal analizada a un único valor de salida. Cabe señalar que Incluso en su versión ideal, se contamina con una señal indeseada a la señal de entrada: Y se llama  ruido de cuantificación.</li>
+    <li>Codificación: la codificación consiste en traducir los valores obtenidos durante la cuantificación a código binario</li>
+    <li>Durante el muestreo y la retención, la señal aún es analógica, puesto que aún puede tomar cualquier valor. No obstante, a partir de la cuantificación, cuando la señal ya toma valores finitos, la señal ya es digital.</li>
+    </ul>
+
+    <h3>5.3.1. Circuitos CAD por los procesos paralelo(Flash), rampa en escalera, de seguimiento, de aproximaciones sucesivas y de pendiente simple y doble</h3>
+
+    <p class="titulin">CAD tipo PARALELO o FLASH</p>    
+    <p>Este codificador es un dispositivo combinacional con n entradas y salidas, tal que, en un instante cualquiera, sólo una entrada toma el valor 1, para la que el circuito genere su código digital de salida.</p>
+    <p>Los codificadores de prioridad prevén la posibilidad de que más de una entrada o tecla de activación están activas simultáneamente. Generalmente el circuito decide entre dos entradas simultáneas escogiendo la mayor de ellas.</p>
+    <p>Este convertidor es muy rápido, ya que la conversión se realiza de forma simultánea y casi instantánea. El tiempo de conversión viene determinado por la velocidad de los comparadores y el codificador.</p>
+    <p> Entre el codificador de prioridad y los  comparadores suele intercalarse un registro (puede ser de biestables D) cuando la entrada varía rápidamente.</p>
+    <p>El reloj es el que controla la transferencia de datos a través de los registros.</p>
+
+    <br>
+    <center><img src="imas/u5/u5_92.jpg" class="img-fluid" alt="Esquema ADC tipo paralelo o flash.">	<p class="tx-figura">Figura 92. Esquema ADC tipo paralelo o flash.</p></center>
+
+    <p>Estos CAD suelen denominarse de tipo “flash”, por la velocidad que suelen alcanzar, hasta cientos de MHz los más rápidos actualmente.</p>
+    <p> En los modelos comerciales, la salida de cada uno de los comparadores se almacena en un circuito de cerrojos (“latches”), antes de pasar al codificador de prioridad.</p>
+    <p>La adición de un bit duplica aproximadamente el número de comparadores. Además, el número de puertas que requiere la lógica digital aumenta con el número de comparadores en un orden  logarítmico al número de comparadores. En consecuencia, estos modelos se emplean sólo en aplicaciones que requieran alta velocidad.</p>
+    <p>El conversor flash está constituido por una serie de comparadores analógicos que comparan voltajes de referencia con el voltaje de entrada analógico. Cuando éste excede el voltaje de referencia para un comparador, se genera un valor alto.</p>
+    <p>En este conversor para la conversión de un código binario a n bits a se necesita n         comparadores.</p>
+    <p>El voltaje de referencia se establece para cada comparar por medio de la red divisora de voltaje resistiva. La salida de los comparadores se conectará a una entrada del codificador de prioridad.</p>
+    
+    <p>Ventajas</p>
+
+   <ul>
+   <li>Provee de un tiempo de conversión rápido, es decir su alta velocidad de respuesta (puede llegar hasta 10MHz).</li>
+   <li>Además, hemos de tener en cuenta la gran capacidad que presentan a la señal de entrada todos los comparadores en paralelo, lo cual obliga a atacar al convertidor con un amplificador de gran ancho de banda.</li>
+   </ul>
+
+    <p>Desventajas</p>
+
+    <ul>
+    <li>Son necesarios un gran número de comparadores para un número binario de tamaño razonable.</li>
+    <li>El usar gran número de comparadores provoca que el empleo de este tipo de convertidor se limite hasta sólo 8 Bits. </li>
+    <li>El circuito se complica conforme aumenta el número de bits. La adición de un bit casi duplica el número de comparadores. Además, al aumentar el número de bits también es mayor la complejidad del codificador de prioridad.</li>
+    <li>Este tipo de convertidores tienen resoluciones muy bajas; los más usuales están entre los 4 y 10 bits. </li>
+    <li>Elevado costo</li>
+    </ul>
+
+    <p><b><i>Ejemplo 11.-</i></b>¿Cuál es la tabla de verdad para el siguiente circuito ADC flash?</p>
+    
+    <br>
+    <center><img src="imas/u5/u5_93.jpg" class="img-fluid" alt="Circuito para el ejemplo 11.">	<p class="tx-figura">Figura 93. Circuito para el ejemplo 11.</p></center>
+
+    <p><b><i>Solución:</i></b>
+
+    <p>Va es el voltaje de entrada, ABC son los comparadores que generarán las salidas de 1 o 0 dependiendo del valor Va de entrada, XY es el resultado digital. El codificador trabaja con entradas en bajo, por lo que cuando recibe alguna de estas genera la salida correspondiente al valor de entrada.</p>
+
+    <p class="titulin">CAD de RAMPA en escalera</p>
+    <p>Una de las versiones más simples del convertidor AD hace uso de un contador binario cómo registro y permite que el cronómetro incremente  un paso a la vez hasta que Vr ≥ Ve. A este se lo llama convertidor A/D con rampa digital ya que la forma de onda en Vref es una rampa que funciona paso por paso (en realidad es escalón por escalón).</p>
+
+    <br>
+    <center><img src="imas/u5/u5_94.jpg" class="img-fluid" alt="ADC  de rampa en escalera">	<p class="tx-figura">Figura 94. ADC  de rampa en escalera</p></center>
+
+    <p>La señal de entrada Ve se compara con la señal del convertidor Vr, cuando ambas son cero el dispositivo está en reset, al entrar Ve mayor de cero, pero menor que Vr,  se produce un pulso de inicio en el contador y en el generador de rampa, a continuación el amOp compara el valor de Ve con el valor de la rampa Vr, cuando el valor Vr ≥ Ve  se genera  un pulso , el contador se detiene, reseteándose el sistema. El contador mantendrá el valor hasta que una nueva conversión de inicio nuevamente.</p>
+
+    <p><b><i>Ejemplo 12.-</i></b>Utilizando el método rampa en escalera calcular el % de resolución y el valor digital que se obtiene si el voltaje de entrada=5V, el valor Vt=2 mV, el valor total de salida=13V y maneja 6 bits.</p>
+    <p>Solución:</p>
+
+    <p>I) Para calcular el valor digital equivalente al voltaje de entrada Va=5V, es necesario conocer el tamaño del paso, es decir el valor de los incrementos que tendrá para llegar al valor máximo. Para eso se calcula la cantidad total de pasos que puede llegar a realizar --> 2⁶-1=63. Teniendo este valor se calcula el tamaño del paso que es: [V total de salida/cantidad de pasos]= 13V/63= 0.206V.</p>
+    <p>Una vez que se obtuvo el valor anterior  se calcula el número de pasos, para esto se divide Va/tamaño del paso=5V/0.206mV=24.27 ~~ 25 pasos, por lo que obteniendo el valor binario de la cantidad que se acaba de obtener resulta el equivalente a la entrada Va=5V.</p>
+    <p>2510 =011001.</p>
+    <p>II) Para el cálculo del porcentaje de resolución se aplica la siguiente fórmula (1/cantidad de pasos)*100</p>
+    <p>Sustituyendo: (1/63)*100=1.58%</p>
+
+    <p class="titulin">CAD de SEGUIMIENTO o RASTREO</p>
+    <p>Es más rápido que el método de rampa, ya que el contador no se restablece después de cada muestra. Se utiliza un contador ascendente –descendente el cual cambia su estado dependiendo de cuando el valor de Vr sea > o < que el voltaje de entrada Ve. De esta manera el contador siempre hará su cuenta en el sentido del voltaje de entrada</p>
+
+    <ul>
+    <li>El contador tiende a seguir la entrada analógica.</li>
+    <li>El tiempo de conversión no es constante.</li>
+    </ul>
+
+    <center><div class="actividad">
+    <h4>Actividad complementaria 2:</h4> <hr>
+    <p class="text-center"><i></i>Consulta la bibliografía y dibuja el esquema del ADC de seguimiento o rastreo</p>   
+    </div></center>
+    <br>
+    
+    <p class="titulin">CAD de APROXIMACIONES SUCESIVAS</p>
+    <p>Un circuito similar al utilizado en los conversores de seguimiento, pero ahora, cada vez que se realiza una conversión se ensayan los sucesivos bits empezando por el más significativo. Según se obtenga un valor menor o mayor se añade o no el bit al control del conversor digital analógico. El tiempo necesario (número de pulsos de reloj) es siempre igual al número de bits más uno.</p>
+    <p>Para evitar que la señal de entrada varíe durante la conversión (unos pocos microsegundos) se utilizan circuitos de muestreo y retención (Sample & Hold) o cuando el espectro de la señal de entrada lo permite un simple filtro pasa bajos que limite la velocidad de variación de la señal por debajo de 1 bit menos significativo en el tiempo que dura una conversión</p>
+    <p>La rapidez, precisión y estabilidad de los conversores de aproximación sucesiva hace que estos sean los más utilizados en la gama de 8 a 16 bits y velocidades entre 10Hz y 1MHz. A velocidades menores se utilizan conversores de doble rampa y a mayores, conversores de tipo flash.</p>
+
+    <p><b><i>Ejemplo 13.-</i></b>Calcula la resolución para un circuito de aproximaciones sucesivas que a la salida tiene un tamaño de paso de 176,  trabaja a 9 bits y a la entrada hay 5 V.</p>
+    <p>Solución</p>
+    <p>Para calcular la resolución teniendo estos datos se aplica la siguiente formula: entrada/paso=resolución</p>
+    <p>por lo que: 5/176=0.028V=28 mV.</p>
+
+    <p><b><i>Ejemplo 14.-</i></b>Realiza los cálculos necesarios, demuestra qué método es más rápido al realizar la conversión, escalera vs aproximaciones sucesivas, si se tienen valores de 7 bits para cada uno y trabajan a 2,000,000 Hz.</p>
+    <p>Solución</p>
+    <p>Conociendo la cantidad de bits y la frecuencia a la que trabajan es suficiente para calcular el tiempo en ambos circuitos.</p>
+    <p>Como la frecuencia está en hz será más conveniente hacer una conversión a Mhz para obtener el resultado en 1/seg, por lo que: 1 Mhz=1,000,000 hz --> 2,000,000/ 1,000,000=2Mhz.</p>
+    <p>Ahora se aplica la fórmula para calcular el tiempo de conversión de un ADC de escalera:</p>
+    <p>(2n-1)(frec. de reloj)= (27-1)(0.5)=1/32 seg.</p>
+    <p>La fórmula para el ADC de aproximaciones es: (N bits*frec. de reloj)= (7)*(0.5)= 1/3.5 seg.</p>
+    <p>Nota: se multiplica por 0.5 en lugar de multiplicarse por 2 ya que a mayor velocidad, se reduce el tiempo de respuesta.</p>
+
+    <center><div class="actividad">
+    <h4>Actividad complementaria 3:</h4> <hr>
+    <p class="text-center"><i></i>Consulta la bibliografía y dibuja el esquema del ADC de seguimiento o rastreo.</p>   
+    </div></center>
+    <br>
+      
+    <p class="titulin">CAD de PENDIENTE SIMPLE Y DOBLE</p>
+    <p class="titulin">CAD de pendiente simple</p>
+    <p>Este tipo de convertidores no utilizan convertidores CDA. Se utiliza un generador de rampa lineal de pendiente constante.</p>
+
+    <br>
+    <center><img src="imas/u5/u5_95.jpg" class="img-fluid" alt="Esquema del ADC de pendiente simple">	<p class="tx-figura">Figura 95. Esquema del ADC de pendiente simple</p></center>
+
+    <p>Al inicio el amplificador operacional en modo comparador tiene ambas entradas en cero, al entrar la señal analógica el comparador  produce un nivel alto en la salida, esto habilita la señal de reloj para el contador y arranca el generador de rampa.
+      Suponiendo que la entrada es de valor Ve el generador de rampa alcanza este valor, produciendo la salida de cero en el comparador, esto resetea el contador y al mismo tiempo guarda el valor de la cuenta binaria, en los latches de salida mediante la lógica de control.</p>
+    <p>La cuenta  habrá contado hasta alcanzar el valor de Ve,  Dicho en otra forma, cada vez que se alcanza el voltaje de entrada por el voltaje de rampa,  se produce una lectura binaria que puede ser fácilmente cambiada a dígitos decimales.</p>
+    <p> Este tipo de convertidor de pendiente simple se usa frecuentemente en los voltímetros digitales.</p>
+
+    <p><b><i>Ejemplo 15.-</i></b>Un convertidor analógico digital de tipo pendiente simple tiene una entrada analógica de 5 V, si termina la conversión utilizando una frecuencia de reloj de 500 kHz y la rampa se incrementa en 1 V/ms. ¿Cuántos pulsos habrá generado el reloj cuando se realice la conversión?</p>
+    <p>solución</p>
+    <p>Como el valor de la rampa se incrementa 1 volt cada milisegundo, para alcanzar los 5 V de la entrada analógica, entonces tardaría 5 milisegundos en realizar la conversión.</p>
+    <p>Para calcular el número de pulsos se multiplica la frecuencia por el tiempo --> 500(5)=2500 pulsos</p>
+
+    <p class="titulin">CAD de pendiente doble</p>
+    <p>Este convertidor usa dos generador uno de rampa variable y otro de rampa constante esto se logra con el empleo de un amplificador operacional en modo integrador.</p>
+    <p>En estado inicial se aplica un voltaje Ve lo cual provoca que se cargue el capacitor C a través de R a un voltaje proporcional al Ve puesto que R se encuentra conectado a la  a tierra virtual de la entrada inversora del amp-OP.
+      En seguida La Lógica de control cambia Sw a –Vref , provocando que el capacitor se descargue en un tiempo proporcional al valor del Ve, al producirse una pendiente negativa de valor constante, al mismo tiempo  arrancando el contador y terminando la cuenta de este, alcanzándose una cuenta proporcional al valor de entrada de VE, esta cuenta se almacena en los latches, produciéndose así un ciclo de medición.
+     Este método de CAD de doble rampa se usa frecuentemente en los multímetros digitales.</p>
+
+     <center><div class="actividad">
+      <h4>Actividad complementaria 4:</h4><hr>
+      <p class="text-center"><i></i>Consultar la bibliografía y dibujar el esquema del ADC de pendiente doble</p>   
+      </div></center>
+      <br>
+
+		<br>
+		<a href="unidad5_2.html" target="_self"><img src="imas/btn_atras.png" class="bot" style="float:left;"></a>
+		<a href="unidad5_4.html" target="_self"><img src="imas/btn_adelante.png" class="bot" style="float:right;"></a>
+
+	</div>
+	  
+	  <div id="pleca_botones"><center><a href="pdf/ejercicios_u5.pdf"  target="_blank"><img src="imas/btn_ejercicios5.png" class="descargable" alt="descargar ejercicios"></a> &nbsp; &nbsp; <a href="pdf/soluciones_u5.pdf"  target="_blank"><img src="imas/btn_solucion5.png" class="descargable" alt="descargar soluciones"></a></center></div>
+	
+
+	  
+	  <br><br><br><br><br><br><br><br><br>
+	  
+
+<script src="js/jquery.js"></script>  
+<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>	
+	</body>
+</html>
+

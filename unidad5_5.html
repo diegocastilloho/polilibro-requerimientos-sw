@@ -1,0 +1,150 @@
+
+<!doctype html>
+<html lang="es">
+  <head>
+  
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Sistemas digitales</title>    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">	
+	<link href="css/estilo.css" rel="stylesheet" type="text/css">	
+  </head>
+  
+  
+  <body>
+	
+<div id="menucin">
+<img src="imas/menu.jpg" id="menucito1" class="img-fluid d-lg-block d-md-none d-sm-none d-none" alt="Encabezado de Sistemas Digitales">
+<img src="imas/menu_m.jpg" id="menucito2" class="img-fluid d-md-block d-lg-none d-sm-none d-none" alt="Encabezado de Sistemas Digitales">
+<img src="imas/menu_sm.jpg" id="menucito3" class="img-fluid d-block d-md-none" alt="Encabezado de Sistemas Digitales">	
+	<p id="botones_menu" class="d-md-block d-sm-none d-none"> <a href="index.html" target="_self" class="bot-menu"> Inicio </a> &nbsp;&nbsp; <a href="unidad1.html" target="_self" class="bot-menu">  Unidad I </a> &nbsp;&nbsp; <a href="unidad2.html" target="_self" class="bot-menu">  Unidad II </a> &nbsp;&nbsp; <a href="unidad3.html" target="_self" class="bot-menu">  Unidad III </a> &nbsp;&nbsp; <a href="unidad4.html" target="_self" class="bot-menu"> Unidad IV </a>   &nbsp;&nbsp; <a href="unidad5.html" target="_self" class="bot-menu">  Unidad V </a> &nbsp;&nbsp; <a href="bibliografia.html" target="_self" class="bot-menu">  Bibliografía </a> </p>
+</div>
+	  
+	  
+<div>
+
+<nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-primary d-md-none">
+	
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+	  
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+		  <li id="espacio"></li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" >Inicio</a>
+        </li>
+        
+       
+		  <li class="nav-item">
+          <a class="nav-link" href="unidad1.html">Unidad I</a>
+        </li>
+		  
+		  <li class="nav-item">
+          <a class="nav-link" href="unidad2.html">Unidad II</a>
+        </li>
+		  
+		  <li class="nav-item">
+          <a class="nav-link" href="unidad3.html">Unidad III</a>
+        </li>
+		  
+		  <li class="nav-item">
+          <a class="nav-link" href="unidad4.html">Unidad IV</a>
+        </li>
+		  
+		  <li class="nav-item">
+          <a class="nav-link" href="unidad5.html">Unidad V</a>
+        </li>
+		  
+		  <li class="nav-item">
+          <a class="nav-link" href="bibliografia.html">Bibliografía</a>
+        </li>
+		  
+		  
+      </ul>
+    </div>
+  </div>
+</nav>
+	 
+	</div>
+	  
+
+	  
+
+		  <br><br><br>
+	<div class="container">
+		
+		<center><img src="imas/portada_u5.jpg" class="img-fluid" alt="Unidad V"></center>
+		<br>
+
+		<div class="card-header">5.5. Introducción al procesamiento de señales digitales o DSP</div>
+		
+    <p>Una de las áreas más dinámicas de los sistemas digitales hoy en día es en el campo del procesamiento digital de señales o DSP (Digital Signal Processing). Un DSP es una forma muy especializada de microprocesador que ha sido optimizado para realizar cálculos repetitivos sobre cadenas de datos digitalizadas. Estos datos son usualmente alimentados al DSP desde un convertidor AD. La matemática y programación requerida para lograr la operación de un DSP está fuera del alcance de estos apuntes.</p>
+    <p>El filtrado de señales digitales y acondicionamiento de señales analógicas son de las principales aplicaciones del DSP. Por ejemplo en música se puede con un DSP filtrar la señal a las frecuencias deseadas.</p>
+
+    <br>
+    <center><img src="imas/u5/u5_102.jpg" class="img-fluid" alt="Esquema de aplicación de un DSP.">	<p class="tx-figura">Figura 102. Esquema de aplicación de un DSP.</p></center>
+
+    <p>La música en formato digital se almacena en el CD. Un sistema óptico de diodos láser lee los datos digitales del disco cuando éste gira y los transfiere al Conversor digital-analógico. Este transforma los datos digitales en una señal analógica que es la reproducción eléctrica de la música original. Esta señal se amplifica y se envía al altavoz para poder disfrutarla.</p>
+    <p>Es innegable que el mundo real  no suele ser digital y muchas veces se desea conocer magnitudes de ese mundo, por ejemplo, la velocidad del viento, la temperatura de un líquido, etc.</p>
+
+    <p><b><i>Ejemplo 19.-</i></b>Describir un DSP tomando como referencia la página <a href="https://es.wikipedia.org/wiki/Procesador_digital_de_se%C3%B1ales" target="_blank">https://es.wikipedia.org/wiki/Procesador_digital_de_se%C3%B1ales</a></p>
+    <p><b><i>Solución tomada de la página web indicada.-</i></b></p>
+    <p>Un Procesador Digital de Señales o DSP (sigla en inglés de Digital Signal Processor) es un sistema basado en un procesador o microprocesador que posee un conjunto de instrucciones, un hardware y un software optimizados para aplicaciones que requieran operaciones numéricas a muy alta velocidad. Debido a esto es especialmente útil para el procesado y representación de señales analógicas en tiempo real: en un sistema que trabaje de esta forma (tiempo real) se reciben muestras (samples en inglés), normalmente provenientes de un conversor analógico/digital (ADC).</p>
+    
+    <h3>5.5.1. Esquema general de adquisición de datos físicos</h3>
+    <p>Un esquema general de adquisición de datos se muestra en la figura 102</p>
+
+    <br>
+    <center><img src="imas/u5/u5_103.jpg" class="img-fluid" alt="Esquema general de un sistema de adquisición de datos.">	<p class="tx-figura">Figura 103. Esquema general de un sistema de adquisición de datos.</p></center>
+
+    <ul>
+    <li>El primer módulo es el sensor de la variable física a  medir, temperatura, presión, sonido, entre otras, </li>
+    <li>Segundo módulo es el acondicionador de señal , que es un circuito generalmente realizado con amplificadores operacionales que permite reducir el ruido, y acoplar la salida a los requerimientos de voltaje de entrada del CAD</li>
+    <li>El tercer módulo es el CAD (Convertidor analógico digital) apropiado para las características y especificaciones de conversión deseadas.</li>
+    <li>Cuarto módulo El procesador puede ser un microcontrolador o una computadora, según la complejidad de procesamiento de los datos.</li>
+    <li>A la salida del sistema puede ser analógica, para la cual se requiere de un convertidor CDA (Convertidor Digital  Analógico), o directamente en forma digital.</li> 
+    </ul>
+
+    <p>Cabe señalar que actualmente existen muchas aplicaciones en el contexto de Internet de las cosas.</p>
+
+    <center><div class="actividad">
+    <h4>Actividad complementaria 5:</h4> <hr>
+    <p class="text-center"><i></i>¿Qué es el Internet de las cosas y cuál es su relación con la adquisición de datos?</p>   
+    </div></center>
+    <br>
+
+    <p>El estudio de los sistemas de adquisición de datos se ve en la UAP de Adquisición de Datos de 4º semestre de la Lic. Ingeniería Informática</p>
+
+
+		<br>
+		<a href="unidad5_4.html" target="_self"><img src="imas/btn_atras.png" class="bot" style="float:left;"></a>
+		<a href="bibliografia.html" target="_self"><img src="imas/btn_adelante.png" class="bot" style="float:right;"></a>
+
+
+
+	
+	</div>
+	  
+	  <div id="pleca_botones"><center><a href="pdf/ejercicios_u5.pdf"  target="_blank"><img src="imas/btn_ejercicios5.png" class="descargable" alt="descargar ejercicios"></a> &nbsp; &nbsp; <a href="pdf/soluciones_u5.pdf"  target="_blank"><img src="imas/btn_solucion5.png" class="descargable" alt="descargar soluciones"></a></center></div>
+	
+
+	  
+	  <br><br><br><br><br><br><br><br><br>
+	  
+
+<script src="js/jquery.js"></script>  
+<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>	
+	</body>
+</html>
+
